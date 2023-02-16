@@ -1,4 +1,4 @@
-// import { Module } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 // import { AuthModule } from './auth/auth.module';
 // import { TopPageModule } from './top-page/top-page.module';
 // import { ProductModule } from './product/product.module';
@@ -13,27 +13,27 @@
 // import { ScheduleModule } from '@nestjs/schedule';
 // import { SitemapModule } from './sitemap/sitemap.module';
 
-// @Module({
-// 	imports: [
-// 		ScheduleModule.forRoot(),
-// 		ConfigModule.forRoot(),
-// 		TypegooseModule.forRootAsync({
-// 			imports: [ConfigModule],
-// 			inject: [ConfigService],
-// 			useFactory: getMongoConfig
-// 		}),
-// 		AuthModule,
-// 		TopPageModule,
-// 		ProductModule,
-// 		ReviewModule,
-// 		FilesModule,
-// 		TelegramModule.forRootAsync({
-// 			imports: [ConfigModule],
-// 			inject: [ConfigService],
-// 			useFactory: getTelegramConfig
-// 		}),
-// 		HhModule,
-// 		SitemapModule
-// 	]
-// })
-// export class AppModule { }
+@Module({
+	imports: [
+		// ScheduleModule.forRoot(),
+		// ConfigModule.forRoot(),
+		// TypegooseModule.forRootAsync({
+		// 	imports: [ConfigModule],
+		// 	inject: [ConfigService],
+		// 	useFactory: getMongoConfig
+		// }),
+		// AuthModule,
+		// TopPageModule,
+		// ProductModule,
+		// ReviewModule,
+		// FilesModule,
+		// TelegramModule.forRootAsync({
+		// 	imports: [ConfigModule],
+		// 	inject: [ConfigService],
+		// 	useFactory: getTelegramConfig
+		// }),
+		// HhModule,
+		// SitemapModule
+	]
+})
+export class AppModule { }
